@@ -14,6 +14,7 @@
 //}
 
 //declarative
+
 pipeline {
 	agent any
 	stages {
@@ -32,7 +33,8 @@ pipeline {
 				echo "Integration Test"
 			}
 		}	
-	} post {
+	} 
+	post {
 		always {
 			echo "I always run"
 		}
