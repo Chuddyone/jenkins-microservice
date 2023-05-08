@@ -17,11 +17,11 @@
 
 pipeline {
 	//agent any
-	agent {docker { image "redis"}}
+	agent {docker { image "node:13.8"}}
 	stages {
 		stage ("Build") {
 			steps {
-				sh "redis --version"	
+				sh "node --version"	
 			}
 		}
 		stage ("Test") {
